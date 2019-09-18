@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "binding-demo-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/bindingDemo/BindingDemoApplicationCustomizer.js",
+          "manifest": "./src/extensions/bindingDemo/BindingDemoApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BindingDemoApplicationCustomizerStrings": "lib/extensions/bindingDemo/loc/{locale}.js"
+  }
+}
