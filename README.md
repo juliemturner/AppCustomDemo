@@ -16,3 +16,5 @@ if (_self.props.context.isDisposed) {
   return _defaultPushState.apply(this, [data, title, url]);
 }
 ```
+
+One other aspect of this is the IndexedDB... the pages I were working on didn't show up there. But Velin said if they don't he was having issues where the navigated event was firing before page load... this MAY help explain why I'm seeing issues with this.context being null but again I could not replicate that. Velin's post is here: https://blog.velingeorgiev.com/page-hit-when-SPA-page-transitioning-modern-sharepoint-sites, see Tweak 3.
